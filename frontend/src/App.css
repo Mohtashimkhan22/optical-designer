@@ -1,0 +1,261 @@
+.opticslab-container {
+  padding: 16px;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f8f9fa, #eef1f4);
+}
+
+/* Title */
+.opticslab-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #000, #222);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Main Layout */
+.opticslab-main {
+  display: flex;
+  gap: 16px;
+}
+
+/* Panel Base */
+.palette,
+.inspector,
+.bottom-panel {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.palette:hover,
+.inspector:hover,
+.bottom-panel:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Palette (left panel) */
+.palette {
+  width: 220px;
+  padding: 12px;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.palette-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.palette-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.palette-item:hover {
+  background: #f3f6fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.palette-item-drag {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.divider {
+  margin: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.control-group {
+  margin-top: 12px;
+}
+
+.control-group input,
+.control-group button {
+  margin-top: 4px;
+}
+
+.sweep-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Buttons */
+.btn {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #4338ca, #4f46e5);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #15803d, #16a34a);
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(90deg, #b91c1c, #dc2626);
+}
+
+.status-info {
+  font-size: 0.85rem;
+  margin-top: 12px;
+  color: #555;
+}
+
+/* Canvas */
+.canvas-area {
+  flex: 1;
+}
+
+.canvas-grid {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 29px,
+      #e6e9ef 30px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 29px,
+      #e6e9ef 30px
+    );
+}
+
+.rotate-handle {
+  cursor: grab;
+}
+
+/* Bottom panel */
+.bottom-panel {
+  margin-top: 12px;
+  padding: 12px;
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-section {
+  flex: 1;
+}
+
+.info-list {
+  font-size: 0.9rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-box {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.sweep-row {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-text {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+/* Inspector (right panel) */
+.inspector {
+  width: 320px;
+  padding: 12px;
+}
+
+.position-inputs {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 4px;
+}
+
+.btn-backend {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-backend:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+}
