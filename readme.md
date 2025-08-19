@@ -1,9 +1,7 @@
 # 🔬 Optical Setup Designer Web App  
 
 ![React](https://img.shields.io/badge/Frontend-ReactJS-61dafb?logo=react&logoColor=white)  
-![Node](https://img.shields.io/badge/Backend-ExpressJS-green?logo=node.js&logoColor=white)  
-![Deploy](https://img.shields.io/badge/Deploy-Netlify%20%26%20Render-blue)  
-![License](https://img.shields.io/badge/License-MIT-lightgrey)  
+![Node](https://img.shields.io/badge/Backend-ExpressJS-green?logo=node.js&logoColor=white)    
 
 ## 📌 Project Overview  
 The **Optical Setup Designer** is a web-based application for **designing and simulating optical experiments**.  
