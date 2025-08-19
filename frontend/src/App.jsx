@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./app.css";
+import "./App.css";
 
 function uid(prefix = "id") {
   return `${prefix}_${Math.random().toString(36).slice(2, 9)}`;
