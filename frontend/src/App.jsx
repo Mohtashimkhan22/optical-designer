@@ -1081,7 +1081,7 @@ export default function App() {
       </div>
       <div className="results-section">
         <button className="btn-backend" onClick={handleProcessScene}>
-          Run
+          Run Backend Processing
         </button>
         <h3>Processed Rays</h3>
         {processedRays && processedRays.length > 0 ? (
