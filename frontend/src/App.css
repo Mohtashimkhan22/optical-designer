@@ -264,6 +264,9 @@ textarea {
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  font-weight: 600;
 }
 .btn-backend:hover {
   background: linear-gradient(90deg, #1d4ed8, #2563eb);
