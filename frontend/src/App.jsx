@@ -767,7 +767,7 @@ export default function App() {
 
       console.log("Sending scene data to backend:", payload);
 
-      const response = await fetch("http://localhost:5000/process", {
+      const response = await fetch("https://optical-designer-2.onrender.com/process", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ payload }),
